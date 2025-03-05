@@ -1,0 +1,32 @@
+﻿<Window x:Class="TP.Windows.LB2.Tasks.Task1.task1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP.Windows.LB2.Tasks.Task1"
+        mc:Ignorable="d"
+        Title="Задание 1" Height="400" Width="465">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="inputArr" HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="220" AcceptsReturn="True"/>
+        <Label Content="Ввод массива:" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label Content="Введите длину &#xA;массива: " HorizontalAlignment="Left" Margin="10,16,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="lenArr" HorizontalAlignment="Left" Margin="113,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="16" Height="21" FontSize="15"/>
+
+        <!-- Кнопки для выполнения операций -->
+        <Button x:Name="btnCalculate" Content="Вычислить" HorizontalAlignment="Left" Margin="180,82,0,0" VerticalAlignment="Top" Width="100" Click="btnCalculate_Click"/>
+        <Button x:Name="btnSort" Content="Упорядочить" HorizontalAlignment="Left" Margin="180,122,0,0" VerticalAlignment="Top" Width="100" Click="btnSort_Click"/>
+
+        <!-- Текстовые блоки для вывода результатов -->
+        <Label Content="Сумма положительных &#xD;&#xA;элементов:" HorizontalAlignment="Left" Margin="164,161,0,0" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="txtSum" HorizontalAlignment="Left" Margin="180,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" IsReadOnly="True"/>
+
+        <Label Content="Произведение между&#xD;&#xA;max и min по модулю:" HorizontalAlignment="Left" Margin="164,230,0,0" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="txtProduct" HorizontalAlignment="Left" Margin="180,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" IsReadOnly="True"/>
+
+        <Label Content="Упорядоченный массив:" Margin="0,63,-14,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="158"/>
+        <TextBox x:Name="txtSortedArray" Margin="321,94,14,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="220" IsReadOnly="True"/>
+    </Grid>
+</Window>

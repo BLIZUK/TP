@@ -1,0 +1,28 @@
+﻿<Window x:Class="TP.Windows.LB2.Tasks.Task3.task3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP.Windows.LB2.Tasks.Task3"
+        mc:Ignorable="d"
+        Title="Задание 3" Height="450" Width="500">
+    <Grid>
+        <!-- Ввод количества строк -->
+        <Label Content="Количество строк:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRows" HorizontalAlignment="Left" Margin="148,10,0,0" VerticalAlignment="Top" Width="50"/>
+
+        <!-- Ввод диапазона чисел -->
+        <Label Content="Начальное значение:" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMin" HorizontalAlignment="Left" Margin="148,40,0,0" VerticalAlignment="Top" Width="50"/>
+
+        <Label Content="Конечное значение:" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMax" HorizontalAlignment="Left" Margin="148,70,0,0" VerticalAlignment="Top" Width="50"/>
+
+        <!-- Кнопка для формирования массива -->
+        <Button x:Name="btnGenerate" Content="Сформировать массив" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="160" Click="btnGenerate_Click"/>
+
+        <!-- Текстовое поле для вывода массива -->
+        <Label Content="Ступенчатый массив:" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Margin="10,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="460" Height="200" IsReadOnly="True"/>
+    </Grid>
+</Window>
