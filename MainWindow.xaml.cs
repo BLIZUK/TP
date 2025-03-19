@@ -95,7 +95,7 @@ namespace TP
             TextInfo.Items.Clear();
             TextInfo.Items.Add($" ");
             TextInfo.Items.Add($"\t\t\t    Лабораторная работа 3:");
-            TextInfo.Items.Add($"Цель работы:");
+            TextInfo.Items.Add($"Цель работы:  Работа со строками");
         }
 
         //кнопка ---------------------------------------------------------------------------------------
@@ -224,15 +224,20 @@ namespace TP
                     Lb1win.Owner = this;
                     Lb1win.Show();
                     break;
-                
+                /*
                 case 2:
                     TP.Windows.LB2.Lb2 Lb2win = new TP.Windows.LB2.Lb2();
                     Lb2win.Owner = this;
                     Lb2win.Show();
                     break;
-                    /*
-                case 3:
+                */
+                    
+                case 2:
+                    TP.Windows.LB3.Lb3 Lb3win = new TP.Windows.LB3.Lb3();
+                    Lb3win.Owner = this;
+                    Lb3win.Show();
                     break;
+                    /*
                 case 4:
                     Lb4Window lb4win = new Lb4Window();
                     lb4win.Owner = this;
