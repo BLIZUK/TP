@@ -41,6 +41,7 @@ namespace TP.Windows.LB2.Tasks.Task3
                         jaggedArray[i][j] = number++; 
                     }
                 }
+                int check = jaggedArray[0][1];
                 // Формируем строку для вывода
                 StringBuilder output = new StringBuilder();
                 for (int i = 0; i < jaggedArray.Length; i++)
