@@ -263,6 +263,7 @@ namespace TP
                     {
                         Owner = this
                     };
+                    Lb4win.Show();
                     break;
                     /*
                 case 5:
