@@ -3,7 +3,11 @@ using System.IO;
 using System.Text;
 using System.Windows;
 using Microsoft.Win32;
-namespace TP.Windows.LB3
+
+
+namespace TP.Windows.LB3.Tasks.LB3_2
+
+
 {
     /// <summary>
     /// Логика взаимодействия для lb3_2.xaml

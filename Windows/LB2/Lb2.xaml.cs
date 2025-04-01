@@ -27,14 +27,14 @@ namespace TP.Windows.LB2
 
         private void Task1_Click(object sender, RoutedEventArgs e)
         {
-            LB2.Tasks.Task1.task1 Lb2task1win = new LB2.Tasks.Task1.task1();
+            LB2.Tasks.Task1.task1 Lb2task1win = new Tasks.Task1.task1();
             Lb2task1win.Owner = this;
             Lb2task1win.Show();
         }
 
         private void Task2_Click(object sender, RoutedEventArgs e)
         {
-            LB2.Tasks.Task2.task2 Lb2task2win = new LB2.Tasks.Task2.task2();
+            LB2.Tasks.Task2.task2 Lb2task2win = new Tasks.Task2.task2();
             Lb2task2win.Owner = this;
             Lb2task2win.Show();
 
@@ -42,7 +42,7 @@ namespace TP.Windows.LB2
 
         private void Task3_Click(object sender, RoutedEventArgs e)
         {
-            LB2.Tasks.Task3.task3 Lb2task3win = new LB2.Tasks.Task3.task3();
+            LB2.Tasks.Task3.task3 Lb2task3win = new Tasks.Task3.task3();
             Lb2task3win.Owner = this;
             Lb2task3win.Show();
         }

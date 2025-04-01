@@ -4,7 +4,10 @@ using System.Linq;
 using System.Windows;
 using Microsoft.Win32;
 
-namespace TP.Windows.LB3
+
+namespace TP.Windows.LB3.Tasks.LB3_1
+
+
 {
     /// <summary>
     /// Логика взаимодействия для lb3_1.xaml

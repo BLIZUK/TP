@@ -10,11 +10,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace TP
 {
+
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+   
+
     public partial class MainWindow : Window
     {
         // Флаг выбора программы
@@ -43,6 +48,7 @@ namespace TP
 
         }
 
+
         //кнопка ---------------------------------------------------------------------------------------
         private void Lb1_Click(object sender, RoutedEventArgs e)
         {
@@ -67,6 +73,7 @@ namespace TP
 
         }
 
+
         //кнопка ---------------------------------------------------------------------------------------
         private void Lb2_Click(object sender, RoutedEventArgs e)
         {
@@ -88,6 +95,7 @@ namespace TP
 
         }
 
+
         //кнопка ---------------------------------------------------------------------------------------
         private void Lb3_Click(object sender, RoutedEventArgs e)
         {
@@ -97,6 +105,7 @@ namespace TP
             TextInfo.Items.Add($"\t\t\t    Лабораторная работа 3:");
             TextInfo.Items.Add($"Цель работы:  Работа со строками");
         }
+
 
         //кнопка ---------------------------------------------------------------------------------------
         private void Lb4_Click(object sender, RoutedEventArgs e)
@@ -114,6 +123,7 @@ namespace TP
 
 
         }
+
 
         //кнопка ---------------------------------------------------------------------------------------
         private void Lb5_Click(object sender, RoutedEventArgs e)
@@ -139,6 +149,7 @@ namespace TP
 
         }
 
+
         //кнопка ---------------------------------------------------------------------------------------
         private void Lb6_Click(object sender, RoutedEventArgs e)
         {
@@ -160,6 +171,7 @@ namespace TP
             TextInfo.Items.Add($"\t   на данном компьютере и позволяющая просматривать  список");
             TextInfo.Items.Add($"\t   потоков данного процесса.");
         }
+
 
         //кнопка ---------------------------------------------------------------------------------------
         private void Lb7_Click(object sender, RoutedEventArgs e)
@@ -209,40 +221,50 @@ namespace TP
             TextInfo.Items.Add($"");
         }
 
+
         //кнопка ---------------------------------------------------------------------------------------
         //Для запуска дополнительных окон 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
             switch (flagChoseLb)
             {
-                
+       
                 case 0:
                     MessageBox.Show("Не выбрана лабораторная работа!");
                     break;
+
                 case 1:
-                    TP.Windows.LB1.Lb1 Lb1win = new TP.Windows.LB1.Lb1();
-                    Lb1win.Owner = this;
+                    TP.Windows.LB1.Lb1 Lb1win = new()
+                    {
+                        Owner = this
+                    };
                     Lb1win.Show();
                     break;
-                /*
+
                 case 2:
-                    TP.Windows.LB2.Lb2 Lb2win = new TP.Windows.LB2.Lb2();
-                    Lb2win.Owner = this;
+                    TP.Windows.LB2.Lb2 Lb2win = new()
+                    {
+                        Owner = this
+                    };
                     Lb2win.Show();
                     break;
-                */
                     
-                case 2:
-                    TP.Windows.LB3.Lb3 Lb3win = new TP.Windows.LB3.Lb3();
-                    Lb3win.Owner = this;
+                case 3:
+                    TP.Windows.LB3.Lb3 Lb3win = new()
+                    {
+                        Owner = this
+                    };
                     Lb3win.Show();
                     break;
-                    /*
+
+                    
                 case 4:
-                    Lb4Window lb4win = new Lb4Window();
-                    lb4win.Owner = this;
-                    lb4win.Show();
+                    TP.Windows.LB4.Lb4 Lb4win = new()
+                    {
+                        Owner = this
+                    };
                     break;
+                    /*
                 case 5:
                     Lb5Window lb5win = new Lb5Window();
                     lb5win.Owner = this;
