@@ -1,11 +1,11 @@
-﻿<Window x:Class="TP.MainWindow"
+﻿<Window x:Name="Main" x:Class="TP.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TP"
         mc:Ignorable="d"
-        Title="AppTP" Height="465" Width="820">
+        Title="AppTP" Height="500" Width="800" Background="#FFCFDFF3" Icon="/ac125f99-1073-44fc-ad0c-27b786e9c530.png">
     <Grid Margin="0,-8,0,8">
         <Grid.RowDefinitions>
             <RowDefinition Height="14*"/>
@@ -37,16 +37,17 @@
             <ColumnDefinition Width="83*"/>
             <ColumnDefinition Width="274*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Margin="1,3,3,2" Stroke="Black" Grid.ColumnSpan="2" Grid.RowSpan="17" Grid.Row="1" Grid.Column="1"/>
+        <Rectangle Margin="1,3,3,2" Stroke="Black" Grid.ColumnSpan="2" Grid.RowSpan="17" Grid.Row="1" Grid.Column="1" Fill="White"/>
         <Button x:Name="Lb1" Content="Работа 1" Margin="19,2,19,2" Click="Lb1_Click" Grid.ColumnSpan="2" Grid.Row="2" Grid.Column="1"/>
         <Button x:Name="Lb2" Content="Работа 2" Margin="19,1,19,2" Click="Lb2_Click" Grid.ColumnSpan="2" Grid.Row="4" Grid.Column="1"/>
         <Button x:Name="Lb3" Content="Работа 3" Margin="19,1,19,2" Click="Lb3_Click" Grid.ColumnSpan="2" Grid.Row="6" Grid.Column="1"/>
         <Button x:Name="Lb4" Content="Работа 4" Margin="19,1,19,2" Click="Lb4_Click" Grid.ColumnSpan="2" Grid.Row="8" Grid.Column="1"/>
-        <Button x:Name="Lb5" Content="Работа 5" Margin="19,1,19,2" Grid.ColumnSpan="2" Grid.Row="10" Grid.Column="1"/>
-        <Button x:Name="Lb6" Content="Работа 6" Margin="19,1,19,2" RenderTransformOrigin="0.511,0.537" Grid.ColumnSpan="2" Grid.Row="12" Grid.Column="1"/>
-        <Button x:Name="Lb7" Content="Работа 7" Margin="19,1,19,2" Grid.ColumnSpan="2" Grid.Row="14" Grid.Column="1" Grid.RowSpan="2"/>
+        <Button x:Name="Lb5" Content="Работа 5" Margin="19,1,19,2" Click="Lb5_Click" Grid.ColumnSpan="2" Grid.Row="10" Grid.Column="1"/>
+        <Button x:Name="Lb6" Content="Работа 6" Margin="19,1,19,2" Click="Lb6_Click" RenderTransformOrigin="0.511,0.537" Grid.ColumnSpan="2" Grid.Row="12" Grid.Column="1"/>
+        <Button x:Name="Lb7" Content="Работа 7" Margin="19,1,19,2" Click="Lb7_Click" Grid.ColumnSpan="2" Grid.Row="14" Grid.Column="1" Grid.RowSpan="2"/>
         <ListBox x:Name="TextInfo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="16,7,14,5" FontFamily="Calibri" FontSize="14" Grid.Column="3" Grid.ColumnSpan="4" Grid.RowSpan="13" Grid.Row="2"/>
         <Button x:Name="Start" Content="Запуск" Margin="0,1,1,2" Click="Start_Click" Grid.Column="4" Grid.RowSpan="3" Grid.Row="15" Grid.ColumnSpan="2"/>
+        <Button x:Name="Info" Grid.Column="1" Content="Инфо" Click="Info_Click" Margin="30,2,32,2" Grid.Row="18" Grid.ColumnSpan="2" Background="#FF8D92FB" Foreground="White"/>
 
     </Grid>
 </Window>

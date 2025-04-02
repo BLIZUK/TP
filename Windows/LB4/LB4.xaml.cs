@@ -46,16 +46,21 @@ namespace TP.Windows.LB4
         // Обработчик для кнопки "Задача 2"
         private void Task2Button_Click(object sender, RoutedEventArgs e)
         {
-            LB4.Tasks.LB4_2.lb4_2 lb3_2win = new LB4.Tasks.LB4_2.lb4_2();
-            lb3_2win.Owner = this;
+            LB4.Tasks.LB4_2.lb4_2 lb3_2win = new()
+            {
+                Owner = this
+            };
             lb3_2win.Show();
         }
+
 
         // Обработчик для кнопки "Задача 3"
         private void Task3Button_Click(object sender, RoutedEventArgs e)
         {
-            LB4.Tasks.LB4_3.lb4_3 lb3_3win = new LB4.Tasks.LB4_3.lb4_3();
-            lb3_3win.Owner = this;
+            LB4.Tasks.LB4_3.lb4_3 lb3_3win = new()
+            {
+                Owner = this
+            };
             lb3_3win.Show();
         }
     }

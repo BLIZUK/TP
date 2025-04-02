@@ -57,17 +57,11 @@ namespace TP
             TextInfo.Items.Add($" ");
             TextInfo.Items.Add($"\t\t\t    Лабораторная работа 1:");
             TextInfo.Items.Add($"Цель работы:");
-            TextInfo.Items.Add($"  Целью данной работы является изучение процедур и функций Win32");
-            TextInfo.Items.Add($"    позволяющих получить общую информации о характеристиках компьютера  ");
-            TextInfo.Items.Add($"    u операционной системы.");
-            TextInfo.Items.Add($"  В данной лабораторной работе рассматриваются функции Win32, с  ");
-            TextInfo.Items.Add($"    помощью которых можно получить перечисленную информацию:");
+            TextInfo.Items.Add($"  Изучение основ языка С# и знакомство с элементами управления C#.");
+            TextInfo.Items.Add($"    Составление линейных и циклических программ. Работа с ");
+            TextInfo.Items.Add($"    математическими функциями C#.");
             TextInfo.Items.Add(" ");
-            TextInfo.Items.Add($"\t•  тип ПК и версия операционной системы;");
-            TextInfo.Items.Add($"\t•  состав аппаратных средств;");
-            TextInfo.Items.Add($"\t•  физическое положение файлов на дисковом носителе;");
-            TextInfo.Items.Add($"\t•  наличие скрытых частей программы;");
-            TextInfo.Items.Add($"\t•  физические особенности (в том числе дефекты) носителя.");
+            TextInfo.Items.Add($"  Вариант 2:");
             TextInfo.Items.Add($" ");
             TextInfo.Items.Add($" ");
 
@@ -88,9 +82,19 @@ namespace TP
             TextInfo.Items.Add($"     •  Изучить работу с одномерными и двумерными прямоугольными и ступенчатыми");
             TextInfo.Items.Add($"        массивами в среде C#.");
             TextInfo.Items.Add($"     •  Ознакомиться с методами класса System.Array.");
-            TextInfo.Items.Add($" ");
-            TextInfo.Items.Add($" ");
-            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($"  Вариант 2:");
+            TextInfo.Items.Add($"    1. В одномерном массиве, состоящем из п вещественных элементов, вычислить");
+            TextInfo.Items.Add($"\t• сумму положительных элементов массива;");
+            TextInfo.Items.Add($"\t• произведение элементов массива, расположенных между максимальным");
+            TextInfo.Items.Add($"\t  по модулю и минимальным по модулю элементами.");
+            TextInfo.Items.Add($"   Упорядочить элементы массива по убыванию.");
+            TextInfo.Items.Add($"    2. Дана целочисленная прямоугольная матрица. Определить");
+            TextInfo.Items.Add($"    количество столбцов, не содержащих ни одного нулевого элемента.");
+            TextInfo.Items.Add($"    3. Построить классическую ступенчатую матрицу.");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
 
 
         }
@@ -212,10 +216,10 @@ namespace TP
             TextInfo.Items.Add($"");
             TextInfo.Items.Add($"");
             TextInfo.Items.Add($"");
-            TextInfo.Items.Add($"\t\t               AppOC Windows System Analyzer");
-            TextInfo.Items.Add($"\t\t\t\t     0.0.8");
+            TextInfo.Items.Add($"\t\t\t\t       TP");
+            TextInfo.Items.Add($"\t\t\t\t     0.0.3");
             TextInfo.Items.Add($"\t\t   Разработана Близученко Андреем ИВТ2-23");
-            TextInfo.Items.Add($"\t\t\t\t 10.10.2024");
+            TextInfo.Items.Add($"\t\t\t\t 10.03.2025");
             TextInfo.Items.Add($"");
             TextInfo.Items.Add($"");
             TextInfo.Items.Add($"");
@@ -248,7 +252,7 @@ namespace TP
                     };
                     Lb2win.Show();
                     break;
-                    
+
                 case 3:
                     TP.Windows.LB3.Lb3 Lb3win = new()
                     {
@@ -257,7 +261,6 @@ namespace TP
                     Lb3win.Show();
                     break;
 
-                    
                 case 4:
                     TP.Windows.LB4.Lb4 Lb4win = new()
                     {
@@ -265,27 +268,31 @@ namespace TP
                     };
                     Lb4win.Show();
                     break;
-                    /*
+                    /*  
                 case 5:
-                    Lb5Window lb5win = new Lb5Window();
-                    lb5win.Owner = this;
+                    Lb5Window lb5win = new()
+                    {
+                        Owner = this
+                    };
                     lb5win.Show();
                     break;
+
                 case 6:
-                    Lb6Window lb6win = new Lb6Window();
-                    lb6win.Owner = this;
+                    Lb6Window lb6win = new()
+                    {
+                        Owner = this
+                    };
                     lb6win.Show();
                     break;
                 case 7:
-                    Lb7_1Window lb7_1win = new Lb7_1Window();
-                    lb7_1win.Owner = this;
-                    lb7_1win.Show();
-                    Lb7_2Window lb7_2win = new Lb7_2Window();
-                    lb7_2win.Owner = this;
-                    lb7_2win.Show();
+
+                    Lb7_1Window lb7 = new()
+                    {
+                        Owner = this
+                    };
+                    lb7win.Show();
                     break;
                 */
-
             }
         }
     }
