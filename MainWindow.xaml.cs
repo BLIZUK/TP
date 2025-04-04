@@ -106,7 +106,20 @@ namespace TP
             TextInfo.Items.Clear();
             TextInfo.Items.Add($" ");
             TextInfo.Items.Add($"\t\t\t    Лабораторная работа 3:");
-            TextInfo.Items.Add($"Цель работы:  Работа со строками");
+            TextInfo.Items.Add($"Цель работы:");
+            TextInfo.Items.Add($"  Изучение классов языка программирования C# для работы со строками:");
+            TextInfo.Items.Add($"\t1.Работа с функциями класса System.String");
+            TextInfo.Items.Add($"\t2.Работа с функциями класса System.Text.StringBuilder");
+            TextInfo.Items.Add($"\t3.Работа с регулярными выражениями. Поиск в тексте фрагментов по");
+            TextInfo.Items.Add($"\t  определенному шаблону");
+            TextInfo.Items.Add($"  Вариант 2:");
+            TextInfo.Items.Add($"\t1.Написать программу, которая вводит текст, состоящий из нескольких ");
+            TextInfo.Items.Add($"\t  предложений, и выводит на экран только предложения, содержащие ");
+            TextInfo.Items.Add($"\t  введенное с клавиатуры слово.   ");
+            TextInfo.Items.Add($"\t2.По правилам машинописи после запятой в тексте все¬гда ставится пробел.");
+            TextInfo.Items.Add($"\t  Составить программу исправления такого типа ошибок в тексте.");
+            TextInfo.Items.Add($"\t3.Дан текстовый файл. Вывести все слова, начинающиеся с согласных");
+            TextInfo.Items.Add($"\t  букв русского алфавита.");
         }
 
 
@@ -118,11 +131,11 @@ namespace TP
             TextInfo.Items.Add($" ");
             TextInfo.Items.Add($"\t\t\t    Лабораторная работа 4:");
             TextInfo.Items.Add($"Цель работы:");
-            TextInfo.Items.Add($"  Цель работы заключается в  освоении методов работы с файлами");
-            TextInfo.Items.Add($"    проецируемыми в память. ");
-            TextInfo.Items.Add($"  Задания для самостоятельной работы:");
-            TextInfo.Items.Add($"    С помощью механизма проецирования в память  замените в текстовом файле все");
-            TextInfo.Items.Add($"    строчные буквы на прописные и удвойте вхождение каждой цифры. ");
+            TextInfo.Items.Add($"  Изучение методов тестирования программного обеспечения:");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
 
 
         }
@@ -136,20 +149,10 @@ namespace TP
             TextInfo.Items.Add($" ");
             TextInfo.Items.Add($"\t\t\t    Лабораторная работа 5:");
             TextInfo.Items.Add($"Цель работы:");
-            TextInfo.Items.Add($"  Целью работы является изучение основных принципов организации");
-            TextInfo.Items.Add($"    многозадачных операционных систем. Все многозадачные операционные");
-            TextInfo.Items.Add($"    системы используют концепцию процесса и потока.");
-            TextInfo.Items.Add($"    В данной работе рассматриваются  следующие вопросы:");
-            TextInfo.Items.Add($"\t•  Чередование выполнения нескольких процессов с целью повышения");
-            TextInfo.Items.Add($"\t   степени использования процессора;");
-            TextInfo.Items.Add($"\t•  Разделение ресурсов между процессами;");
-            TextInfo.Items.Add($"\t•  Организация обмена данными между процессами и потоками;");
-            TextInfo.Items.Add($"\t•  Изменение класса приоритета процесса и уровня приоритета потока.");
-            TextInfo.Items.Add($"");
-            TextInfo.Items.Add($"Задание для выполнения:");
-            TextInfo.Items.Add($"\t2. Программа, выполняющая запуск любого процесса и завершение");
-            TextInfo.Items.Add($"\t   данного процесса по команде пользователя.");
-
+            TextInfo.Items.Add($"  Рассмотреть возможности С# для работы с потоками байтов символов и строк.");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"Вариант 2:");
+            TextInfo.Items.Add($"1. Сформировать файл последовательности 20 чисел, в кото¬рой каждый i-й");
         }
 
 
@@ -161,18 +164,14 @@ namespace TP
             TextInfo.Items.Add($" ");
             TextInfo.Items.Add($"\t\t\t    Лабораторная работа 6:");
             TextInfo.Items.Add($"Цель работы:");
-            TextInfo.Items.Add($"  Целью работы является получение навыков работы  с функциями ");
-            TextInfo.Items.Add($"    библиотеки ToolHelp API для получения системной информации. В данной ");
-            TextInfo.Items.Add($"    работе рассматриваются следующие вопросы:");
-            TextInfo.Items.Add($"\t•  Получение списка всех  процессов в системе;");
-            TextInfo.Items.Add($"\t•  Получение списка всех  модулей в системе;");
-            TextInfo.Items.Add($"\t•  Получение списка всех  потоков выбранного процесса;");
-            TextInfo.Items.Add($"\t•  Получение карты памяти выбранного процесса.");
-            TextInfo.Items.Add($"");
-            TextInfo.Items.Add($"Задания для самостоятельной работы");
-            TextInfo.Items.Add($"\t2. Программа, формирующая список всех процессов, выполняющихся");
-            TextInfo.Items.Add($"\t   на данном компьютере и позволяющая просматривать  список");
-            TextInfo.Items.Add($"\t   потоков данного процесса.");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
         }
 
 
@@ -184,23 +183,12 @@ namespace TP
             TextInfo.Items.Add($" ");
             TextInfo.Items.Add($"\t\t\t    Лабораторная работа 7:");
             TextInfo.Items.Add($"Цель работы:");
-            TextInfo.Items.Add($"  Целью данной работы является  исследование объектов синхронизации,");
-            TextInfo.Items.Add($"    с помощью которых в многозадачной среде обеспечивается ");
-            TextInfo.Items.Add($"    последовательный доступ к совместно используемым ресурсам. В данной");
-            TextInfo.Items.Add($"    работе рассматриваются следующие вопросы:");
-            TextInfo.Items.Add($"\t•Синхронизация потоков с помощью объектов пользовательского режима");
-            TextInfo.Items.Add($"\t (критические секции);");
-            TextInfo.Items.Add($"\t•Синхронизация потоков с помощью объектов ядра (объекты Mutex, ");
-            TextInfo.Items.Add($"\t события, семафоры, процессы и потоки);");
-            TextInfo.Items.Add($"\t•Работа Wait- функций в различных режимах.");
-            TextInfo.Items.Add($"");
-            TextInfo.Items.Add($"Задания для самостоятельной работы");
-            TextInfo.Items.Add($"    2.Исследование возможности синхронизации потоков с помощью событий. ");
-            TextInfo.Items.Add($"    Создание двух приложений. Первое приложение следит  за вторым ");
-            TextInfo.Items.Add($"    приложением. Второе приложение позволяет пользователю вводить с ");
-            TextInfo.Items.Add($"    помощью клавиатуры и отображать в своем окне произвольные символы.");
-            TextInfo.Items.Add($"    Первое, контролирующее приложение при вводе  в окне второго приложения");
-            TextInfo.Items.Add($"    символа отображает в своем окне символ \"*\".");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
+            TextInfo.Items.Add($"   ");
         }
 
 
