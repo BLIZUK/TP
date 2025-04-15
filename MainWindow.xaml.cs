@@ -152,7 +152,15 @@ namespace TP
             TextInfo.Items.Add($"  Рассмотреть возможности С# для работы с потоками байтов символов и строк.");
             TextInfo.Items.Add($"   ");
             TextInfo.Items.Add($"Вариант 2:");
-            TextInfo.Items.Add($"1. Сформировать файл последовательности 20 чисел, в кото¬рой каждый i-й");
+            TextInfo.Items.Add($"        1.Сформировать файл последовательности 20 чисел, в кото¬рой каждый i-й");
+            TextInfo.Items.Add($"          определяется по формуле");
+            TextInfo.Items.Add($"          y=sin(i*π / 8), если i < 8;");
+            TextInfo.Items.Add($"          y=4cos(i(π +1)/5), i > 8.");
+            TextInfo.Items.Add($"          Определить количество отрицательных значений, содержащихся в сформированном");
+            TextInfo.Items.Add($"        2.Подсчитать количество сдвоенных символов 'ее', 'нн', 'лл' в тексте,");
+            TextInfo.Items.Add($"          в текстовом файле.");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
         }
 
 

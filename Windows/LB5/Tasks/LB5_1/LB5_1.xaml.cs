@@ -8,7 +8,7 @@ namespace TP.Windows.LB5.Tasks.LB5_1
 {
     public partial class LB5_1 : Window
     {
-        private const string FilePath = "sequence.txt";
+        private const string FilePath = "D:\\apps\\Tools\\VisualStudio\\Projects\\TP\\Windows\\LB5\\Tasks\\LB5_1\\test.txt";
 
         public LB5_1()
         {
@@ -19,7 +19,7 @@ namespace TP.Windows.LB5.Tasks.LB5_1
         {
             List<double> numbers = new List<double>();
 
-            for (int i = 1; i <= 15; i++)
+            for (int i = 1; i <= 20; i++)
             {
                 double y;
                 if (i < 8)
@@ -27,7 +27,7 @@ namespace TP.Windows.LB5.Tasks.LB5_1
                 else if (i > 8)
                     y = 4 * Math.Cos(i * (Math.PI + 1) / 5);
                 else
-                    y = 0; // можно определить по-другому, если нужно
+                    y = 0;
 
                 numbers.Add(y);
             }
