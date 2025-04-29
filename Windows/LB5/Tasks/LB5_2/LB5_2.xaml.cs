@@ -13,7 +13,7 @@ namespace TP.Windows.LB5.Tasks.LB5_2
 
         private void SelectFileAndCount_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog
+            OpenFileDialog openFileDialog = new()
             {
                 Title = "Выберите текстовый файл",
                 Filter = "Текстовые файлы (*.txt)|*.txt|Все файлы (*.*)|*.*"
@@ -33,7 +33,7 @@ namespace TP.Windows.LB5.Tasks.LB5_2
             }
         }
 
-        private int CountOccurrences(string text, string pattern)
+        static private int CountOccurrences(string text, string pattern)
         {
             int count = 0;
             int index = 0;

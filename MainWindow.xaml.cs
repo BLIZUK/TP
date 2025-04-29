@@ -271,14 +271,15 @@ namespace TP
                     };
                     lb5win.Show();
                     break;
-                    /*
+                    
                 case 6:
-                    Lb6Window lb6win = new()
+                    TP.Windows.LB6.Lb6 lb6win = new()
                     {
                         Owner = this
                     };
                     lb6win.Show();
                     break;
+                    /*
                 case 7:
 
                     Lb7_1Window lb7 = new()
