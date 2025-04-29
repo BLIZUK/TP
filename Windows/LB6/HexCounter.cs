@@ -1,90 +1,83 @@
 ﻿using System;
 
-
-namespace TP.Windows.LB6;
-
-
-// Базовый класс счетчика
-public class HexCounter
+namespace TP.Windows.LB6
 {
-    protected int _current;
-    protected readonly int _min;
-    protected readonly int _max;
-
-    // Конструктор
-    public HexCounter()
+    public class HexCounter
     {
-        _min = 0x0;
-        _max = 0xFF; // 255
-        _current = _min;
+        protected int _current;
+        protected int _min;
+        protected int _max;
+
+        public HexCounter()
+        {
+            _min = 0x0;
+            _max = 0xFF;
+            _current = _min;
+        }
+
+        public HexCounter(int min, int max, int initial)
+        {
+            if (min >= max) throw new ArgumentException("Min must be less than max");
+            if (initial < min || initial > max) throw new ArgumentOutOfRangeException();
+
+            _min = min;
+            _max = max;
+            _current = initial;
+        }
+
+        public string CurrentState => $"0x{_current:X}";
+        public int Min => _min;
+        public int Max => _max;
+
+        public virtual void Increment()
+        {
+            if (_current + 1 > _max)
+                throw new InvalidOperationException("Counter overflow");
+            _current++;
+        }
+
+        public virtual void Decrement()
+        {
+            if (_current - 1 < _min)
+                throw new InvalidOperationException("Counter underflow");
+            _current--;
+        }
+
+        // Добавлены методы для изменения границ
+        public void SetMin(int newMin)
+        {
+            if (newMin >= _max) throw new ArgumentException("Новый min должен быть меньше max");
+            _min = newMin;
+            if (_current < _min) _current = _min;
+        }
+
+        public void SetMax(int newMax)
+        {
+            if (newMax <= _min) throw new ArgumentException("Новый max должен быть больше min");
+            _max = newMax;
+            if (_current > _max) _current = _max;
+        }
+
     }
 
-    // Перегрузка: Конструктор с произвольными значениями
-    public HexCounter(int min, int max, int initial)
+    public class AdvancedHexCounter : HexCounter
     {
-        if (min >= max) throw new ArgumentException("Ошибка: min>max");
-        if (initial < min || initial > max) throw new ArgumentOutOfRangeException();
+        public AdvancedHexCounter(int min, int max, int initial) : base(min, max, initial) { }
 
-        _min = min;
-        _max = max;
-        _current = initial;
-    }
+        public void IncrementBy(int n)
+        {
+            if (n < 0) throw new ArgumentException("Value must be positive");
+            if (_current + n > _max)
+                throw new InvalidOperationException("Counter overflow");
+            _current += n;
+        }
 
-    // Текущее состояние (шестнадцатеричное представление)
-    public string CurrentState => $"0x{_current:X}";
-
-    public int min()
-    {
-        return _min;
-    }
-
-    public int max()
-    {
-        return _max;
-    }
-
-
-    // Увеличение на 1
-    public void Increment()
-    {
-        if (_current + 1 > _max)
-            throw new InvalidOperationException("Ошибка: Выход за границу");
-
-        _current++;
-    }
-
-    // Уменьшение на 1
-    public void Decrement()
-    {
-        if (_current - 1 < _min)
-            throw new InvalidOperationException("Ошибка: Выход за границу");
-
-        _current--;
-    }
-}
-
-
-// Дочерний класс с расширенным функционалом
-public class AdvancedHexCounter(int min, int max, int initial) : HexCounter(min, max, initial)
-{
-
-    // Увеличение на N
-    public void IncrementBy(int n)
-    {
-        if (n < 0) throw new ArgumentException("Ошибка:значение должно быть положительными");
-        if ((int)_current + n > _max)
-            throw new InvalidOperationException("Ошибка: Выход за границу");
-
-        _current += n;
-    }
-
-    // Уменьшение на N
-    public void DecrementBy(int n)
-    {
-        if (n < 0) throw new ArgumentException("Ошибка:значение должно быть положительными");
-        if ((int)_current - n < _min)
-            throw new InvalidOperationException("Ошибка: Выход за границу");
-
-        _current -= n;
+        public void DecrementBy(int n)
+        {
+            if (n < 0) throw new ArgumentException("Value must be positive");
+            if (_current - n < _min)
+                throw new InvalidOperationException("Counter underflow");
+            _current -= n;
+        }
     }
 }
