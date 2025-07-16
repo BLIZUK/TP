@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Windows;
 
@@ -41,10 +41,6 @@ namespace TP.Windows.LB2.Tasks.Task3
                         jaggedArray[i][j] = number++; 
                     }
                 }
-
-                // Проверка на наличие элементов за границей индексов
-                //int check = jaggedArray[0][1];
-
                 // Формируем строку для вывода
                 StringBuilder output = new StringBuilder();
                 for (int i = 0; i < jaggedArray.Length; i++)
