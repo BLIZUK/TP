@@ -1,0 +1,42 @@
+﻿<Window x:Class="TP.Windows.LB4.Tasks.LB4_3.lb4_3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="НОД нескольких чисел" Height="642" Width="703">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="146*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="244*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0" Header="Источник данных" Margin="0,0,0,38" Grid.RowSpan="2">
+            <StackPanel>
+                <RadioButton x:Name="rbDefault" Content="Тестовый пример" IsChecked="True" Margin="5"/>
+                <RadioButton x:Name="rbCustom" Content="Загрузить из файла" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+
+        <StackPanel Orientation="Horizontal" Margin="0,46,0,31" Grid.RowSpan="3">
+            <Button Content="Обработать" Click="ProcessButton_Click" Margin="0,5" Padding="20,5" Height="26" Width="116"/>
+            <Button Content="Создать тестовые файлы" Click="CreateTestData_Click" Margin="10,5" Padding="10,5" Height="27" Width="163"/>
+        </StackPanel>
+
+        <TextBlock Grid.Row="2" Text="Входные данные:" FontWeight="Bold" Margin="0,10,0,5"/>
+        <TextBox Grid.Row="2" x:Name="InputText" IsReadOnly="True" 
+                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                 FontFamily="Consolas" Margin="0,49,0,6" Grid.RowSpan="2"/>
+
+        <TextBlock Grid.Row="4" Text="Результат:" FontWeight="Bold" Margin="0,10,0,5"/>
+        <TextBox Grid.Row="5" x:Name="ResultText" IsReadOnly="True" 
+                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                 FontFamily="Consolas" FontSize="14" FontWeight="Bold" Margin="0,87,0,0"/>
+
+        <TextBox Grid.Row="5" x:Name="StepsText" IsReadOnly="True"
+                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                 FontFamily="Consolas" Margin="0,118,0,0" Grid.RowSpan="2"/>
+    </Grid>
+</Window>

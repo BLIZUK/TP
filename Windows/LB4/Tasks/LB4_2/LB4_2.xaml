@@ -1,0 +1,36 @@
+﻿<Window x:Class="TP.Windows.LB4.Tasks.LB4_2.lb4_2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Наибольшая возрастающая подпоследовательность" Height="550" Width="650">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0" Header="Источник данных">
+            <StackPanel>
+                <RadioButton x:Name="rbDefault" Content="Тестовый пример" IsChecked="True" Margin="5"/>
+                <RadioButton x:Name="rbCustom" Content="Загрузить из файла" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Обработать" Click="ProcessButton_Click" Margin="0,5" Padding="20,5"/>
+            <Button Content="Создать тестовые файлы" Click="CreateTestData_Click" Margin="10,5" Padding="10,5"/>
+        </StackPanel>
+
+        <TextBlock Grid.Row="2" Text="Входные данные:" FontWeight="Bold" Margin="0,10,0,5"/>
+        <TextBox Grid.Row="3" x:Name="InputText" IsReadOnly="True" 
+                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                 FontFamily="Consolas"/>
+
+        <TextBlock Grid.Row="4" Text="Результат:" FontWeight="Bold" Margin="0,10,0,5"/>
+        <TextBox Grid.Row="5" x:Name="ResultText" IsReadOnly="True" 
+                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                 FontFamily="Consolas" FontSize="14"/>
+    </Grid>
+</Window>

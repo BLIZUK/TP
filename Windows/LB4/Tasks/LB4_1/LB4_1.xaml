@@ -1,0 +1,44 @@
+﻿<Window x:Class="TP.Windows.LB4.Tasks.LB4_1.lb4_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Лабораторная работа 4.1" Height="450" Width="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0" Header="Источник данных" Margin="0,0,0,10">
+            <StackPanel>
+                <RadioButton x:Name="rbDefault" Content="Стандартные тесты" 
+                            IsChecked="True" GroupName="DataSource"/>
+                <RadioButton x:Name="rbCustom" Content="Выбрать файл..." 
+                            GroupName="DataSource"/>
+            </StackPanel>
+        </GroupBox>
+
+        <Button Grid.Row="1" Content="Обработать данные" 
+                Click="itog_Click" Margin="0,0,0,10"/>
+
+        <Button Grid.Row="2" x:Name="NextTest" Content="Следующий тест" 
+                Click="NextTest_Click" Margin="0,0,0,10"
+                />
+
+        <TextBlock Grid.Row="3" x:Name="TB" FontWeight="Bold"/>
+
+        <TextBlock Grid.Row="4" Text="Загруженные данные:" FontWeight="Bold"/>
+        <TextBox Grid.Row="4" x:Name="txtInputData" 
+                Margin="0,20,0,0" Height="100"
+                TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                IsReadOnly="True"/>
+
+        <TextBlock Grid.Row="5" Text="Результат:" FontWeight="Bold"/>
+        <TextBox Grid.Row="5" x:Name="txtResult" 
+                FontSize="14" FontWeight="Bold"
+                Margin="0,5" IsReadOnly="True"/>
+    </Grid>
+</Window>

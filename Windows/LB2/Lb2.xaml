@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TP.Windows.LB2"
         mc:Ignorable="d"
-        Title="ЛБ2" Height="300" Width="250">
+        Title="ЛБ2" Height="300" Width="250" Background="#FFCFDFF3">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="137*"/>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="TP.Windows.LB5.Tasks.LB5_1.LB5_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LB5_2" Height="350" Width="525">
+    <Grid Margin="10">
+        <StackPanel>
+            <Button Content="Сформировать и записать в файл" Click="GenerateAndSave_Click" Margin="0,0,0,10"/>
+            <Button Content="Прочитать из файла и вывести" Click="ReadAndDisplay_Click" Margin="0,0,0,10"/>
+            <ListBox x:Name="OutputListBox" Height="150"/>
+            <TextBlock x:Name="NegativeCountText" FontWeight="Bold" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

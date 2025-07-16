@@ -1,0 +1,11 @@
+﻿<Window x:Class="TP.Windows.LB5.Tasks.LB5_2.LB5_2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Подсчёт сдвоенных букв" Height="250" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <Button Content="Выбрать файл и подсчитать" Click="SelectFileAndCount_Click" Margin="0,0,0,10"/>
+            <TextBlock x:Name="ResultTextBlock" TextWrapping="Wrap" FontSize="14"/>
+        </StackPanel>
+    </Grid>
+</Window>
