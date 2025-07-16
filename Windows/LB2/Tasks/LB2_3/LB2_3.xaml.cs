@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Windows;
 
@@ -41,7 +41,6 @@ namespace TP.Windows.LB2.Tasks.Task3
                         jaggedArray[i][j] = number++; 
                     }
                 }
-
                 // Формируем строку для вывода
                 StringBuilder output = new StringBuilder();
                 for (int i = 0; i < jaggedArray.Length; i++)
